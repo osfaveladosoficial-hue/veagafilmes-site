@@ -1,0 +1,702 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<meta name="keywords" content="Veagá Filmes, funk paulista, produtora audiovisual, videoclipes, baixada santista, funk brasileiro">
+
+<meta name="author" content="Veagá Filmes">
+
+<meta property="og:image" content="file:///C:/Users/Pichau/Desktop/sites/site%201/veagaflmeslogo.jpg">
+
+<meta property="og:url" content="https://veagafilmes.br.vc">
+
+<meta property="og:site_name" content="Veagá Filmes">
+
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="favicon.png" type="image/png">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Veagá Filmes — Produtora Audiovisual Oficial</title>
+
+<meta name="description" content="Veagá Filmes é uma produtora audiovisual brasileira especializada em videoclipes, funk, cultura urbana e produções musicais." />
+
+<meta property="og:title" content="Veagá Filmes" />
+<meta property="og:description" content="Produtora audiovisual brasileira especializada em videoclipes, cultura urbana e funk." />
+<meta property="og:type" content="website" />
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Montserrat',sans-serif;
+background:#050505;
+color:white;
+overflow-x:hidden;
+}
+
+header{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+url('file:///C:/Users/Pichau/Desktop/sites/ChatGPT%20Image%207%20de%20mai.%20de%202026,%2018_09_03.png');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:40px;
+}
+
+.hero{
+max-width:1000px;
+}
+
+.hero h1{
+font-size:90px;
+font-weight:900;
+letter-spacing:4px;
+text-transform:uppercase;
+margin-bottom:20px;
+color:#ff1e1e;
+}
+
+.hero p{
+font-size:22px;
+line-height:1.7;
+color:#ddd;
+margin-bottom:35px;
+}
+
+.btn{
+display:inline-block;
+padding:16px 40px;
+background:#ff1e1e;
+color:white;
+text-decoration:none;
+font-weight:700;
+border-radius:10px;
+transition:.3s;
+}
+
+.btn:hover{
+background:white;
+color:black;
+transform:scale(1.05);
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+padding:20px 60px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.7);
+backdrop-filter:blur(10px);
+z-index:999;
+}
+
+.logo{
+font-size:28px;
+font-weight:900;
+color:#ff1e1e;
+text-transform:uppercase;
+}
+
+.menu{
+display:flex;
+gap:25px;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.menu a:hover{
+color:#ff1e1e;
+}
+
+section{
+padding:100px 8%;
+}
+
+.title{
+font-size:52px;
+font-weight:900;
+margin-bottom:50px;
+text-transform:uppercase;
+color:#ff1e1e;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:20px;
+}
+
+.about-text p{
+line-height:1.9;
+font-size:18px;
+color:#ccc;
+margin-bottom:20px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.card{
+background:#101010;
+padding:35px;
+border-radius:20px;
+transition:.3s;
+border:1px solid rgba(255,255,255,.05);
+}
+
+.card:hover{
+transform:translateY(-10px);
+border-color:#ff1e1e;
+}
+
+.card h3{
+font-size:28px;
+margin-bottom:20px;
+color:#ff1e1e;
+}
+
+.card p{
+color:#ccc;
+line-height:1.8;
+}
+
+.press{
+background:#0a0a0a;
+}
+
+.press-links{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.press-item{
+background:#111;
+padding:30px;
+border-radius:18px;
+transition:.3s;
+}
+
+.press-item:hover{
+transform:scale(1.03);
+}
+
+.press-item h4{
+font-size:24px;
+margin-bottom:15px;
+color:#ff1e1e;
+}
+
+.press-item a{
+color:white;
+word-break:break-word;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+text-align:center;
+}
+
+.stat{
+padding:40px;
+background:#111;
+border-radius:20px;
+}
+
+.stat h2{
+font-size:55px;
+color:#ff1e1e;
+margin-bottom:10px;
+}
+
+.stat p{
+color:#ccc;
+font-size:18px;
+}
+
+footer{
+padding:60px 8%;
+background:black;
+text-align:center;
+border-top:1px solid rgba(255,255,255,.08);
+}
+
+footer p{
+color:#888;
+line-height:1.8;
+}
+
+.socials{
+margin-top:25px;
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+}
+
+.socials a{
+color:white;
+text-decoration:none;
+font-weight:700;
+transition:.3s;
+}
+
+.socials a:hover{
+color:#ff1e1e;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+font-size:55px;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+nav{
+padding:20px;
+}
+
+.menu{
+display:none;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+
+<div class="logo">VEAGÁ FILMES</div>
+
+<div class="menu">
+
+<a href="#quem-somos">Quem Somos</a>
+<a href="#sobre">Sobre</a>
+<a href="#clipes">Clipes</a>
+<a href="#imprensa">Imprensa</a>
+<a href="#contato">Contato</a>
+
+</div>
+
+</nav>
+
+<header>
+
+<div class="hero">
+
+<h1>VEAGÁ FILMES</h1>
+
+<p>
+Produtora audiovisual brasileira especializada em videoclipes,
+cultura urbana, funk e produções independentes.
+</p>
+
+<a href="https://www.youtube.com/@VeagaFilmes" class="btn" target="_blank">
+ASSISTIR CLIPES
+</a>
+
+</div>
+</header>
+	
+	<section id="quem-somos">
+
+<h2 class="section-title">
+Quem <span>Somos</span>
+</h2>
+
+<div class="about">
+
+<img src="file:///C:/Users/Pichau/Desktop/sites/site%201/veagafilmes.jpeg" alt="Veagá Filmes">
+
+<div class="about-text">
+
+<p>
+A Veagá Filmes é uma produtora audiovisual brasileira fundada
+por Vitor Hugo Barrionuevo Monteiro (Santos, 27 de fevereiro de 1997),&nbsp; conhecido por desenvolver
+videoclipes, conteúdos urbanos e produções ligadas ao funk paulista
+e à cultura periférica brasileira.</p>
+
+<p>
+Com forte identidade visual cinematográfica, a produtora busca
+representar a realidade das ruas, da Baixada Santista e da música
+urbana nacional através de produções modernas e autênticas.
+</p>
+
+<p>
+A Veagá Filmes vem conquistando reconhecimento através de plataformas
+como YouTube, IMDb e matérias publicadas em veículos como
+KondZilla e Terra.
+</p>
+
+<p>
+O objetivo da produtora é fortalecer artistas independentes,
+valorizar a cultura periférica e elevar o nível audiovisual
+do cenário urbano brasileiro.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="sobre">
+
+<h2 class="title">Sobre a VeagÁ Filmes</h2>
+
+<div class="about">
+
+<img src="WhatsApp Image 2026-05-07 at 18.06.39.jpeg">
+
+<div class="about-text">
+
+<p>
+A Veagá Filmes é uma produtora audiovisual independente focada
+na produção de videoclipes, conteúdos urbanos e projetos ligados
+à cultura funk e periférica brasileira.
+</p>
+
+<p>
+A produtora vem fortalecendo artistas independentes através
+de produções visuais modernas inspiradas na estética do funk paulista
+e das grandes produtoras urbanas do Brasil.
+</p>
+
+<p>
+Com presença ativa no YouTube, Instagram e plataformas digitais,
+a Veagá Filmes constrói sua identidade através de conteúdos autorais,
+lançamentos audiovisuais e fortalecimento da cultura urbana.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="servicos">
+
+<h2 class="title">Serviços</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Videoclipes</h3>
+<p>
+Produção completa de videoclipes profissionais
+para artistas independentes e projetos musicais urbanos.
+</p>
+</div>
+
+<div class="card">
+<h3>Produção Audiovisual</h3>
+<p>
+Captação, direção, edição e finalização de conteúdos
+visuais modernos para internet e streaming.
+</p>
+</div>
+
+<div class="card">
+<h3>Marketing Musical</h3>
+<p>
+Fortalecimento de artistas e projetos musicais através
+de identidade visual e presença digital.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="press" id="imprensa">
+
+<h2 class="title">Imprensa & Mídia</h2>
+
+<div class="press-links">
+
+<div class="press-item">
+
+<h4>KondZilla</h4>
+
+<p>
+Veagá Filmes promete trazer de volta a estética da Baixada Santista nas músicas.
+</p>
+
+<br>
+
+<a href="https://kondzilla.com/veaga-filmes-promete-trazer-de-volta-a-estetica-da-baixada-santista-nas-musicas/" target="_blank">
+Ler matéria
+</a>
+
+</div>
+
+<div class="press-item">
+
+<h4>Terra</h4>
+
+<p>
+Produtor quebra estereótipos e mantém raiz do funk da Baixada.
+</p>
+
+<br>
+
+<a href="https://www.terra.com.br/visao-do-corre/pega-a-visao/produtor-quebra-estereotipos-e-mantem-raiz-do-funk-da-baixada,33715e245be6b82e6ee3b01c589c64eea81vad1r.html" target="_blank">
+Ler matéria
+</a>
+
+</div>
+
+<div class="press-item">
+
+<h4>IMDb</h4>
+
+<p>
+Perfil oficial da Veagá Filmes na plataforma internacional IMDb.
+</p>
+
+<br>
+
+<a href="https://www.imdb.com/pt/name/nm14574103/" target="_blank">
+Abrir IMDb
+</a>
+
+</div>
+
+<div class="press-item">
+
+<h4>WikiFavelas</h4>
+
+<p>
+Página pública institucional da Veagá Filmes.
+</p>
+
+<br>
+
+<a href="https://wikifavelas.com.br/index.php/Veag%C3%A1_Filmes" target="_blank">
+Abrir página
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Presença Digital</h2>
+
+<div class="stats">
+
+<div class="stat">
+<h2>YouTube</h2>
+<p>Canal oficial com videoclipes e lançamentos.</p>
+</div>
+
+<div class="stat">
+<h2>IMDb</h2>
+<p>Presença internacional na maior plataforma audiovisual.</p>
+</div>
+
+<div class="stat">
+<h2>Instagram</h2>
+<p>Conteúdo oficial da produtora e bastidores.</p>
+</div>
+
+</div>
+	
+<section id="video">
+
+<h2 class="title">TRAJETÓRIAS</h2>
+
+<div class="video-container">
+
+<iframe
+src="https://www.youtube.com/embed/iTsV07ebOzY?rel=0"
+title="Veagá Filmes"
+allowfullscreen
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+referrerpolicy="strict-origin-when-cross-origin">
+</iframe>
+
+</div>
+
+<div class="movie-links">
+
+
+<a href="https://www.imdb.com/pt/title/tt34621167/?ref_=nm_knf_c_1" target="_blank" class="movie-btn imdb-btn">
+⭐ Ver no IMDb
+</a>
+
+</div>
+
+</section>
+
+<style>
+
+.video-container{
+position:relative;
+width:100%;
+padding-bottom:56.25%;
+height:0;
+overflow:hidden;
+border-radius:24px;
+box-shadow:0 0 40px rgba(255,0,0,.18);
+margin-top:40px;
+}
+
+.video-container iframe{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+border:0;
+border-radius:24px;
+}
+
+.movie-links{
+display:flex;
+gap:20px;
+justify-content:center;
+margin-top:35px;
+flex-wrap:wrap;
+}
+
+.movie-btn{
+padding:16px 32px;
+background:#ff1e1e;
+color:white;
+text-decoration:none;
+font-weight:700;
+border-radius:14px;
+transition:.3s;
+}
+
+.movie-btn:hover{
+transform:translateY(-5px);
+background:white;
+color:black;
+}
+
+.imdb-btn{
+background:#f5c518;
+color:black;
+}
+
+.imdb-btn:hover{
+background:white;
+color:black;
+}
+
+</style>
+
+<style>
+
+.video-container{
+position:relative;
+width:100%;
+padding-bottom:56.25%;
+height:0;
+overflow:hidden;
+border-radius:24px;
+box-shadow:0 0 40px rgba(255,0,0,.18);
+margin-top:40px;
+}
+
+.video-container iframe{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+border:0;
+border-radius:24px;
+}
+
+</style>
+
+
+
+<footer id="contato">
+
+<h2 class="title">Contato</h2>
+
+<p>
+Produtora audiovisual brasileira focada em cultura urbana,
+videoclipes e produções musicais independentes.
+</p>
+
+<div class="socials">
+
+<a href="https://www.youtube.com/@VeagaFilmes" target="_blank">
+YouTube
+</a>
+
+<a href="https://www.imdb.com/pt/name/nm14574103/" target="_blank">
+IMDb
+</a>
+
+<a href="https://kondzilla.com/veaga-filmes-promete-trazer-de-volta-a-estetica-da-baixada-santista-nas-musicas/" target="_blank">
+KondZilla
+</a>
+
+<a href="https://www.terra.com.br/visao-do-corre/pega-a-visao/produtor-quebra-estereotipos-e-mantem-raiz-do-funk-da-baixada,33715e245be6b82e6ee3b01c589c64eea81vad1r.html" target="_blank">
+Terra
+</a>
+	
+<a href="https://instagram.com/veagafilmes" target="_blank">
+Instagram
+</a>
+
+</div>
+
+<br><br>
+
+<p>
+© 2026 VEAGÁ FILMES — TODOS OS DIREITOS RESERVADOS
+</p>
+
+</footer>
+
+</body>
+</html>
+```
